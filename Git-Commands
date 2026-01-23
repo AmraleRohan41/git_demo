@@ -28,4 +28,4 @@ git log — Displays the commit history of the current branch, showing commits c
 
 git revert <commit_id> — Creates a new commit that undoes the changes from the specified commit, preserving history safely. Unlike  git reset , it doesn’t delete commits—ideal for shared repositories.
 
-
+end
