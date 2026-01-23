@@ -1,13 +1,23 @@
-"""Sample module for Pylint testing."""
+"""Sample module demonstrating Pylint best practices."""
 
-import sys  # Remove this line
-
-def calculate(a, b, c):  # Fix spacing, drop extra arg
-    """Calculates a * c after adding a + b."""
-    x = a + b
-    print(x * c)
-    return x
+def calculate(a, b, c):
+    """Calculate sum of a+b multiplied by c.
+    
+    Args:
+        a (int): First number
+        b (int): Second number  
+        c (int): Multiplier
+        
+    Returns:
+        int: Result of (a + b) * c
+    """
+    result = a + b
+    print(result * c)
+    return result
 
 def main():
-    calculate(1, 2, 3)  # Match args
-    # Shorten long lines, etc.
+    """Main entry point."""
+    calculate(1, 2, 3)
+
+if __name__ == "__main__":
+    main()
