@@ -1,0 +1,31 @@
+Git Commands
+
+git init  — Initialises an empty got repository.
+
+git status — Give information about which branch you are in and how many commits you have made and how many tracked and untracked files.
+
+git branch — A Git branch represents an independent line of development in a repository, allowing you to work on features, bug fixes, or experiments separately from the main codebase.
+
+Common Commands
+	•	List branches:  git branch  (local) or  git branch -r  (remote)
+	•	Create and switch:  git checkout -b new-branch  or  git switch -c new-branch 
+	•	Switch branches:  git checkout branch-name  or  git switch branch-name 
+	•	Delete:  git branch -d branch-name  (safe) or  -D  (force)
+
+git checkout -b <branch_name> — Switching to new branch, if you want to switch to an existing branch the use “git checkout branch_name with -b”.
+
+git add <file_name> — Used to stage the untracked file.
+
+git add . — Used to stage all untracked files.
+
+git commit  -m “message” — Used to track the stagged files after being added by git add.
+
+git restore <file_name> — The  git restore  command discards changes in your working directory or staging area, restoring files to match the last commit—ideal for undoing uncommitted edits without losing history.
+
+git restore —staged <file_name> — Used to untack/ unstaged the staged file.
+
+git log — Displays the commit history of the current branch, showing commits chronologically from newest to oldest. This helps track changes, authors, dates, and messages in your repository.
+
+git revert <commit_id> — Creates a new commit that undoes the changes from the specified commit, preserving history safely. Unlike  git reset , it doesn’t delete commits—ideal for shared repositories.
+
+
